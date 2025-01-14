@@ -87,7 +87,9 @@ process.env.JWT_SECRET,
 )
 res.cookie('token',token)
 
-res.send("Logged in")
+
+res.send({user,message:"logged in"})
+
   })
 
 
